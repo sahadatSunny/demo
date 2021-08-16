@@ -1,0 +1,417 @@
+@import '../../assets/font-awesome-4.7.0/css/font-awesome.min.css';
+
+/* Imports font from local */
+
+@font-face{
+    font-family: verveine;
+    src: url(../../assets/font/Verveine_Trial_Rg.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: OpenSans;
+    src: url(../../assets/font/OpenSans-Regular.ttf) format("truetype");
+    src: url(../../assets/font/OpenSans-Bold.ttf) format("truetype") local("bold");
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* style for header section */
+
+header #header-bg{
+    background-color: #F4F5F9;
+    background-size: cover;
+    
+}
+
+header nav a img{
+    width: 149.5px;
+    height: 41.25px;
+}
+
+header .container-fluid nav .container ul{
+    
+    
+    font-family: OpenSans;
+    font-weight: bold;
+    float: right;
+    
+    
+}
+
+#right{
+    float: right;
+}
+
+
+.left-border{
+    border-left: 3px solid #333; 
+}
+
+header .container-fluid nav .container ul button{
+    background-color: #41BFB3;
+    border: none;
+}
+
+/* style for banner section */
+
+header .title h2{
+    font-family: verveine;
+    color: #EC8B00;
+    font-size: 72px;
+    border-bottom: 8px solid #EC8B00;
+    padding: 15px 0 30px 0;
+
+
+    
+}
+
+header .banner-section h3{
+    font-family: OpenSans;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+
+header .banner-section span{
+    font-family: OpenSans;
+    font-weight: 100;
+    font-size: 21px;
+    width: 800px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+header .banner-section form input{
+
+    background-image: url(../../assets/img/search.png);
+    background-position: 40px center;
+    background-repeat: no-repeat;
+    padding: 5px 60px 5px 60px;
+    text-indent: 90px;
+    border-radius: 0;
+    border: none;
+    font-size: 21px;
+
+
+}
+
+
+/* style for searchbar's placeholder on all the web browser */
+
+
+header .banner-section form ::-webkit-input-placeholder {
+
+    color: #202221;
+    text-align: left;
+    font-family: OpenSans;
+    font-weight: bold;
+    font-size: 18px;
+   
+    
+  }
+ header .banner-section form ::-moz-placeholder {
+    color: #3E4241;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 21px;
+  }
+ header .banner-section form :-ms-input-placeholder {
+    color: #3E4241;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 21px;
+  }
+
+header .banner-bottom{
+   padding: 15px 50px 40px 50px;
+  
+}
+
+header .banner-bottom a{
+    font-family: OpenSans;
+    text-decoration: none;
+    color: #2F3332;
+    font-weight: bolder;
+}
+
+
+.icon-center img{
+    width: 60px;
+    height: 80px;
+    
+}
+
+
+@media only screen and (max-width: 992px) {
+    .icon-center {
+        text-align: center;
+    }
+  }
+
+
+.text-note{
+    font-family: OpenSans;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #F4F5F9;
+}
+
+.trial-section{
+    font-family: OpenSans;
+    margin-top: 60px;
+}
+
+.trial-section h4{
+    font-size: 29px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.cards {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card-section .card-top{
+   
+    background-color: #F4F5F9;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.card-section .card-top .top-text{
+    padding: 40px 40px 0 0;
+}
+
+.card-section .card-top .c-icon{
+    padding-left: 40px;
+}
+
+
+.card-section .card-bottom{
+    background-color: #144B45;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+
+
+/* style for accordion */
+
+
+.accrodion-section{
+    margin-top: 50px;
+}
+
+.accrodion-section i{
+    color: #9496A1;
+}
+
+
+
+.accor{
+    margin-top: 20px;
+}
+
+.accordion {
+    background-color: #F4F5F9;
+    color: #2F3432;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+
+.accrodion-section button span{
+      padding: 40px 0 0 40px;
+      font-weight: 900;
+      font-size: 18px;
+  }
+ 
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  .accordion:after {
+    content: '\002B';
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    padding: 5px 15px;
+    background-color: #41BFB3;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+
+
+  /* style for map section */
+
+
+  .map-section{
+      margin-top: 80px;
+  }
+
+  .map-section h4{
+      font-weight: bolder;
+      margin-bottom: 15px;
+      
+  }
+
+
+  /* style for location-section */
+
+  .location-section{
+      margin-top: 50px;
+  }
+
+  
+
+  .location-section thead{
+      background-color:#323F48;
+      color: #fff;
+      font-weight: bold;
+  }
+
+ 
+
+.location-section table th , .location-section table td{
+    display: table-cell;
+    text-align: left;
+}
+
+  
+
+  @media(max-width: 992px) {
+
+        
+
+        .location-section table th{
+            display: none;
+        }
+
+        .location-section table td{
+            display: block;
+        }
+        .location-section table td:first-child{
+            padding-top: 8px;
+        }
+        .location-section table td:last-child{
+            padding-bottom: 8px;
+        }
+        .location-section table td{
+            font-size: 18px;
+            font-weight: bold;
+            float: right;
+            width: 70%;
+            justify-content: left;
+        }
+        
+        .location-section table td::before{
+            content: attr(data-th) ": ";
+            font-weight: bold;
+            width: 20px;
+            display: inline-block;
+        }
+
+ 
+  }
+
+   /* style for call to action */
+
+
+.ac-button{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ac-button button{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 90px 10px 90px;
+    background-color: #41BFB3;
+    border: none;
+}
+
+
+/* style for contact section */
+
+.contact-section{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    background-color: #F4F5F9;
+    padding: 30px 20px 20px 0;
+
+}
+
+.contact-section span{
+    font-size: 18px;
+    text-align: right;
+    padding-left: 70px;
+    color: #9496A1;
+
+}
+
+.contact-section p{
+    text-align: left;
+    color: #303332;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* style for info text */
+
+.info-text{
+    margin-top: 50px;
+}
+
+.text-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.foot-nav{
+    margin-top: 50px;
+}
+
+.foot-nav a{
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    color:#2F3432;
+}
